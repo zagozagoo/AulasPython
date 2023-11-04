@@ -1,0 +1,35 @@
+1) Criação de classe:
+Crie a classe "Tamagotchi" com os atributos necessários, incluindo nome, fome, saúde e idade. Cada atributo deve possuir Get e Set próprio (utilize Property para isso).
+Os atributos fome e saúde possuem uma peculiaridade: ambos possuem um
+valor mínimo de 0 e máximo de 10.
+O construtor deve requerer apenas o nome como obrigatório, os outros atributos devem ser opcionais. Fome deve possuir o valor 10 como padrão, saúde e idade devem possuir o valor 0 como padrão.
+Existem duas informações que devemos levar em consideração, o Humor e o
+Status do Tamagotchi. Ambos são uma combinação entre os atributos Fome e Saúde, ou seja, um campo calculado, então não devemos criar um atributo para armazenar esta informação pois ela pode ser calculada a qualquer momento.
+O cálculo do humor é feito da seguinte forma: Seu valor padrão é "feliz". Se apenas Fome estiver abaixo de 6, o humor será "com fome". Se apenas Saúde estiver abaixo de 6, o humor será "doente". Se ambos estiverem abaixo de 6, o humor será "doente e com fome".
+O status deve ser calculado a cada operação que o sistema fizer, e ele é feito da seguinte forma: Se Saúde atingir o valor 0 ou Fome atingir o valor 10, o status do Tamagotchi será igual a "falecido", deve ser salvo no save e o usuário informado que não é mais possivel jogar com o Tamagotchi. Caso contrário, o status será igual a
+"vivo".
+A classe deve ter três métodos: Salvar, Verificar e Recuperar. Como se trata de manipulação de arquivo, é importante fazer o uso do try/catch/finally. Caso o arquivo não seja encontrado, pare o sistema e informe o usuário. Lembre-se de sempre fechar o arquivo aberto quando um erro ocorrer.
+Salvar: quando chamado, o método deve salvar os valores dos atributos atuais da classe no arquivo saves.csv.
+
+Verificar: possui como parâmetro um nome. Quando chamado, o método deve procurar pelo nome do Tamagotchi no arquivo saves.csv e retornar true caso já exista algum Tamagotchi com o nome escolhido e false caso contrário.
+Recuperar: quando chamado, o método deve procurar pelo nome do Tamagotchi no arquivo saves.csv (utilize o método verificar para isso) e armazenar na classe os atributos encontrados. Observe que se o status do Tamagotchi for igual a "falecido", a operação não deve ser realizada e o usuário deve ser informado.
+2) Menu principal - Parte 1
+Aqui o seu Tamagotchi irá ser configurado. Peça para o usuário inserir um nome e verifique se no arquivo já existe o nome. Se não existir, crie uma instância da classe. Se existir, recupere as informações. Depois disso, abra o Menu principal parte 2.
+3) Menu principal - Parte 2
+Deve conter as opções: Renomear, Alimentar. Medicar, Banhar. Verificar humor.
+Verificar Idade e Sair.
+Renomear: O usuário deve inserir um novo nome para o seu Tamagotchi. Utilize os métodos da classe para verificar se o nome já existe. Caso exista, peça para o usuário inserir outro nome.
+Alimentar: fome deve diminuir em 2 pontos.
+Medicar: saúde deve aumentar em 2 ponto.
+Banhar: saúde deve aumentar em 5 pontos. Limitado a 2 usos.
+Verificar humor: deve ser calculado e mostrado o humor do Tamagotchi
+Verificar idade: deve ser mostrado a idade
+Sair: deve exibir uma mensagem de confirmação, caso o usuário deseje salvar o seu save. Caso sim, salve usando o método com esta função. Caso não, apenas feche o programa.
+
+IMPORTANTE!
+	1.	A cada seleção de função no menu, a fome deve aumentar e a saúde diminuir de 0 a 2 pontos, de forma aleatória e a idade deve ser incrementada em 1.
+	2.	Lembre-se de sempre verificar o status do Tamagotchi. ﻿﻿﻿Utilize um laço de repetição para o menu. A condição de parada é caso o Tamagotchi atinja o status "falecido". Utilize sempre que necessário o break/continue.
+	3.	Após sair do menu, utilize o método de salvar o Tamagotchi com o seu status.
+	4.	Use funções para cada opção do menu.
+	5.	Se achar necessário, crie outros métodos para te auxiliar na execução do projeto.
+	6.	Preocupe-se com o estado final do projeto. Procure entregar com suas funcionalidades completas, ou que pelo menos não haja um impeditivo no fluxo de uso do usuário.

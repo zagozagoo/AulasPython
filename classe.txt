@@ -1,0 +1,76 @@
+Classe no Python
+
+Vamos iniciar com as classes para que entenda o que são elas e onde você pode utilizá-las dentro do seu código em Python.
+
+Então dentro desse site você teria que criar as coisas que compõem esse site, como: filmes, séries, usuários, perfis de usuários…
+
+A criação deles é feita por meio das classes, então na hora de criar vamos fazer dessa maneira.
+
+# Filmes
+# Series
+# Usuarios
+# Perfis de Usuarios
+
+class Filme():
+	atributos
+	metodos
+Nós vamos definir os atributos/características dessa classe. Então quais seriam os atributos de filme? Duração, imagem inicial, atores, descrição…
+
+Esses atributos são as informações do filme, então quando você abre um filme no seu aplicativo de streaming, você vai conseguir visualizar todas essas informações de cada filme.
+
+Temos que definir também os métodos/funções desse filme. Então o que o usuário pode fazer com o filme? Pode dar play, salvar, pausar…
+
+Aqui são as ações que você pode fazer com cada um dos filmes. Diferente dos atributos que você só visualiza, aqui você vai poder interagir.
+
+Então pode selecionar o filme, começar, pausar, salvar, curtir, colocar na lista…
+
+Para cada elemento do seu site você vai criar uma classe, e dentro dela, você vai colocar os atributos e métodos dessa classe.
+
+Nesse caso, você vai ter tanto os atributos quanto os métodos de cada um dos elementos, então vamos ter para filmes, séries, usuários…
+
+Lembrando que você não precisa criar diferentes métodos e atributos para cada elemento. Se criou para filme, você pode utilizar esses mesmos métodos e atributos para todos os outros filmes.
+
+Dessa forma você evita ter que ter um retrabalho para repetir o mesmo procedimento várias e várias vezes de forma desnecessária.
+
+Instância no Python
+
+A instância seria como se fosse um elemento dessa classe específica, então se você colocasse no seu código filme = Filme().
+
+Você estaria criando uma instância da classe filme, ou seja, cada um dos filmes do seu site serão uma instância da classe filme. Isso quer dizer que vai ter todas as características da sua classe filme.
+
+Então você pode fazer:
+
+filme.play
+filme.duracao
+Todos os métodos criados para a classe filme, serão ser atribuídos também para cada instância, ou seja, você não precisa criar isso de novo para cada filme.
+
+Então se você tem play, duração, pause, descrição, elenco, trailer… você vai ter tudo isso nas instâncias que criar, até porque você vai ter mais de um filme no seu site e todos eles vão ter esses métodos e atributos.
+
+Isso quer dizer que você não precisa recriar esses métodos e atributos para cada um dos filmes que você tenha, até porque isso seria inviável.
+
+Imagine que você tenha 100 filmes e para cada um deles você tenha que definir os métodos e atributos, pense no tempo que iria demorar pra fazer isso.
+
+Dessa forma você pode ter um classe para cada elemento, mas pode ter várias instâncias dessa mesma classe.
+
+Isso faz com que seu código seja mais eficiente e você não tenha um trabalho muito grande na hora de replicar os métodos e atributos de cada classe.
+
+Objeto no Python
+
+Você já deve ter ouvido falar que tudo no Python é um objeto, e isso é verdade!
+
+A classe que mostramos é um objeto, a variável filme que criamos é um objeto do tipo Filme().
+
+texto = "Meu nome é Lira"
+Esse texto (variável) é um objeto, que é uma instância da classe string (da classe texto), ou seja, é um objeto do tipo string.
+
+O mesmo vai valer para qualquer outra variável seja ela string, int, double… Veja que os objetos são de algum tipo, então podemos ter o objeto do tipo Filme() que é um objeto de uma classe.
+
+Se quiser, você pode visitar o site abaixo que ele vai ter mais detalhes sobre Classes e Objetos para que você se aprofunde mais nessa parte.
+
+https://panda.ime.usp.br/pensepy/static/pensepy/13-Classes/classesintro.html
+
+Além disso ele comenta sobre as instâncias também, fora que você consegue rodar os códigos de exemplo na própria página, o que vai te auxiliar a absorver melhor o conteúdo!
+
+Esse link que mostrei tem uma parte mais detalhada desses assuntos que comentei aqui na aula, a ideia era te mostrar a diferença entre cada um deles.
+
+Mas você pode aprofundar seus estudos para entender objetos, classes e instâncias para se tornar mais eficiente em programação, e claro, utilizar isso nos seus códigos de forma correta e eficiente!
