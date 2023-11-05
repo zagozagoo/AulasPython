@@ -10,8 +10,8 @@ class Game():
         else:
             return False
 
-    def make_move(self, row, col):
-        if self.is_valid_move
+#    def make_move(self, row, col):
+#        if self.is_valid_move
 #     def check_win(self):      #vai usar for in range p checar row e col e diagonais para o win
 #     def switch_player(self):
 
@@ -37,4 +37,4 @@ class Player():
     def board(self, game):
         return game.board
 
-class Graphics:
+#class Graphics:
