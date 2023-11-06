@@ -1,0 +1,21 @@
+Exercício:
+Suponha que você esteja criando um sistema de gerenciamento de livros em uma biblioteca. Crie as seguintes estruturas de dados para representar informações sobre livros:
+
+Lista de Livros (List): Crie uma lista de livros disponíveis na biblioteca. Cada livro deve ser representado como um dicionário com os seguintes campos: "Título", "Autor", "Ano de Publicação" e "Gênero".
+
+Tupla de Autores (Tuple): Crie uma tupla que contenha os nomes de alguns autores famosos (por exemplo, Shakespeare, Jane Austen, George Orwell).
+
+Dicionário de Livro Favorito (Dictionary): Crie um dicionário que represente o livro favorito de um usuário. O dicionário deve conter os campos "Título", "Autor", "Ano de Publicação" e "Gênero".
+
+Tarefas:
+
+Crie a lista de livros com pelo menos 5 livros.
+Crie a tupla de autores com pelo menos 3 nomes.
+Crie o dicionário do livro favorito, preenchendo-o com informações fictícias.
+Imprima os detalhes do livro favorito, usando o dicionário.
+Imprima o título do primeiro livro na lista de livros.
+Adicione um novo livro à lista de livros.
+Imprima todos os livros disponíveis na biblioteca com seus títulos e autores.
+Imprima os nomes dos autores da tupla.
+Altere o gênero do livro favorito no dicionário.
+Remova o livro que você adicionou anteriormente da lista de livros.
