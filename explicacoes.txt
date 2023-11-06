@@ -1,0 +1,90 @@
+1. Listas:
+• Listas são coleções ordenadas e mutáveis de elementos.
+• Os elementos de uma lista são acessados por indices, começando do zero.
+• Você pode adicionar, remover e modificar elementos em uma lista.
+• Exemplo:
+minha_lista = [1, 2, 3, 4]
+minha_lista.append(5)  # Adiciona o elemento 5 no final da lista
+minha_lista[2] = 10  # Modifica o terceiro elemento para 10
+del minha_lista[1]  # Remove o segundo elemento
+
+
+2. Tuplas:
+• Tuplas são coleções ordenadas e imutáveis de elementos.
+• Os elementos de uma tupla também são acessados por índices, começando do zero.
+• Você não pode adicionar, remover ou modificar elementos em uma tupla após cria-la.
+• Exemplo:
+minha_tupla = (1, 2, 3, 4)
+elemento = minha_tupla[2]  # Acessa o terceiro elemento (valor 3)
+# minha_tupla[2] = 10  # Isso resultaria em um erro, pois as tuplas são imutáveis
+
+3. Dicionários:
+• Dicionários são coleções não ordenadas de pares chave-valor.
+• Os elementos de um dicionário são acessados por chaves, não por índices.
+• Você pode adicionar, remover e modificar pares chave-valor em um dicionário.
+• Exemplo:
+meu_dicionario = {"nome": "João", "idade": 25, "cidade": "São Paulo"}
+idade = meu_dicionário["idade"]  # Acessa o valor associado à chave "idade"
+meu_dicionario["profissão"] = "Engenheiro"  # Adiciona um novo par chave-valor
+del meu_dicionario["cidade"]  # Remove o par chave-valor com a chave "cidade"
+
+
+Em resumo, as listas são mutáveis e usam indices, as tuplas são imutáveis e
+também usam índices, enquanto os dicionários são coleções de pares chave-valor e não têm ordem definida.
+A escolha entre eles depende das necessidades específicas do seu programa.
+
+---HERANCA E POLIMORFISMO---
+
+Herança em Python:
+A herança é um conceito de programação orientada a objetos que permite que uma classe (chamada classe derivada ou subclasse) herde características e comportamentos de outra classe
+(chamada classe base ou superclasse).
+Isso permite a reutilização de código e a criação de hierarquias de classes.
+Exemplo de herança em Python:
+
+class Animal:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def fazer_som(self):
+        pass
+
+class Cachorro(Animal):
+    def fazer_som(self):
+        return "Au Au"
+
+class Gato(Animal):
+    def fazer_som(self):
+        return "Miau"
+
+dog = Cachorro("Rex")
+cat = Gato("Whiskers")
+
+print(dog.nome, "faz", dog.fazer_som())  # Saída: Rex faz Au Au
+print(cat.nome, "faz", cat.fazer_som())  # Saída: Whiskers faz Miau
+
+Neste exemplo, a classe Animal é a classe base e as classes Cachorro e Gato
+são subclasses que herdam de Animal. Cada subclasse fornece uma implementação personalizada do método fazer_som.
+
+
+
+Polimorfismo em Python:
+O polimorfismo é a capacidade de objetos de diferentes classes responderem ao mesmo método de maneira apropriada ao contexto.
+Isso permite que você chame métodos em objetos sem saber exatamente qual classe esses objetos pertencem.
+Exemplo de polimorfismo em Python:
+
+def fazer_som_de_animal(animal):
+    return animal.fazer_som()
+
+animal1 = Cachorro("Rex")
+animal2 = Gato("Whiskers")
+
+print(fazer_som_de_animal(animal1))  # Chama fazer_som do Cachorro
+print(fazer_som_de_animal(animal2))  # Chama fazer_som do Gato
+
+Neste exemplo, a função
+fazer_som_de_animal aceita objetos de diferentes classes como argumentos e chama o método fazer_som () em cada um deles, demonstrando o polimorfismo.
+Independentemente do tipo de animal passado, o método apropriado é chamado de acordo com a classe do objeto.
+Em resumo, a herança permite que as classes compartilhem características e comportamentos, enquanto o polimorfismo permite que diferentes
+objetos se comportem de maneira apropriada ao contexto, simplificando o uso de classes e métodos em situações diversas.
+
+
